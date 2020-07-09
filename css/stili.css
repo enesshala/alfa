@@ -1,0 +1,154 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    background: #e3e3e3;
+}
+::selection{
+    background: #000;
+    color: #8124E2;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.logo{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    height: 150px;
+    transform: translateX(-50%);
+    transition: .15s;
+    z-index: 10;
+}
+
+.alfaproduct{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #333;
+    clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+}
+.alfaproduct .background{
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    transition: .2s all;
+    z-index: -1;
+}
+
+.alfaproduct:hover .background{
+    transform: scale(1.1);
+}
+
+.info-bottom{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    height: 59%;
+    width: 99%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: rgba(0, 0, 0, .7);
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.info-bottom img{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 350px;
+    margin-bottom: 25px;
+    z-index: 5;
+}
+
+
+.alfareality{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #555;
+    clip-path: polygon(50% 0%, 50% 40%, 0 100%, 0 100%, 0 0);
+}
+
+.alfareality .background{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s all;
+    z-index: -1;
+}
+
+.alfareality:hover .background{
+    transform: scale(1.1);
+}
+
+.info-left{
+    position: absolute;
+    /* text-align: center; */
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: 99%;
+    clip-path: polygon(50% 0%, 50% 40%, 0 100%, 0 100%, 0 0);
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+}
+.info-left img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50px;
+    width: 350px;
+    margin-bottom: 25px;
+    z-index: 15;
+}
+
+.dritare{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #444;
+    clip-path: polygon(50% 0%, 50% 40%, 100% 100%, 100% 100%, 100% 0);
+}
+
+.dritare .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s all;
+    z-index: -1;
+}
+
+.dritare:hover .background{
+    transform: scale(1.1);
+}
+
+.info-right{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    height: 99%;
+    width: 99%;
+    clip-path: polygon(50% 0%, 50% 40%, 100% 100%, 100% 100%, 100% 0);
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+}
+.info-right img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 50px;
+    width: 350px;
+    z-index: 5;
+}

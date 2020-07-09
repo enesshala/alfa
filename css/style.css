@@ -5,6 +5,10 @@ body {
   font-family: 'Play', sans-serif;
 }
 
+::selection {
+  background-color: #00b819;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   background: #ddd;
@@ -139,6 +143,7 @@ path {
 .overlay-content .active{
   color: #fff;
 }
+/* // Navbar */
 
 /* Content */
 #container {
@@ -170,6 +175,7 @@ path {
   bottom: 4px;
   font-size: 18px;
   text-transform: capitalize;
+  border-radius: 4px;
   opacity: 0;
   transition: .5s all;
 }
@@ -190,6 +196,7 @@ path {
 .gallery img {
   width: 550px;
   height: 450px;
+  border-radius: 4px;
   object-fit: fill;
 }
 
