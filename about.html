@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ALFA - About</title>
 </head>
@@ -27,8 +28,64 @@
     </div>
     <!-- //NAVBAR -->
 
+    <!-- Sections -->
+    <div id="fullpage">
+        <div class="section section1">
+            <div class="container">
+                <div class="asd">
+                    <h1>Section 1</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident cum officia quas
+                        perferendis illum eos explicabo necessitatibus earum, ipsa voluptas iste magnam sed suscipit
+                        doloremque facere tempora corporis minima.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="asd">
+                <h1>Section 2</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident cum officia quas
+                    perferendis illum eos explicabo necessitatibus earum, ipsa voluptas iste magnam sed suscipit
+                    doloremque facere tempora corporis minima.</p>
+            </div>
+        </div>
+        <div class="section section3">
+            <div class="slide">
+                <h1>Section 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident cum officia quas
+                    perferendis illum eos explicabo necessitatibus earum, ipsa voluptas iste magnam sed suscipit
+                    doloremque facere tempora corporis minima.</p>
+            </div>
+            <div class="slide">
+                <h1>Section 2</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident cum officia quas
+                    perferendis illum eos explicabo necessitatibus earum, ipsa voluptas iste magnam sed suscipit
+                    doloremque facere tempora corporis minima.</p>
+            </div>
+            <div class="slide">
+                <h1>Section 3</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident cum officia quas
+                    perferendis illum eos explicabo necessitatibus earum, ipsa voluptas iste magnam sed suscipit
+                    doloremque facere tempora corporis minima.</p>
+            </div>
+        </div>
+    </div>
+    <!-- //Sections -->
 
-    <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                autoScrolling: true,
+                scrollHorizontally: true,
+                navigation: true,
+                keyboardScrolling: true,
+                lazyLoading: true,
+            });
+        });
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
