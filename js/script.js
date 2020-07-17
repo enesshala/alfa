@@ -1,16 +1,6 @@
-// Preloader
-// function hidePreloader() {
-//     let preloader = document.getElementById('preloader');
-//     preloader.style.opacity = '0';
-//     setTimeout(function () {
-//         preloader.style.display = "none";
-//     }, 300);
-// }
-
 // navbar
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    document.getElementById("container").style.opacity = "0";
 }
 
 function closeNav() {
@@ -18,13 +8,37 @@ function closeNav() {
     document.getElementById("container").style.opacity = "1";
 }
 
+//Hide nvabar on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbari").style.top = "0";
+    } else {
+        document.getElementById("navbari").style.top = "-135px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
-$(document).ready(function () {
-    $('#autoWidth').lightSlider({
-        autoWidth: true,
-        loop: true,
-        onSliderLoad: function () {
-            $('#autoWidth').removeClass('cS-hidden');
-        }
-    });
-});
+// //Button to top
+// //Get the button
+// let mybutton = document.getElementById("myBtn");
+
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function () { scrollFunction() };
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//         mybutton.style.display = "block";
+//     } else {
+//         mybutton.style.display = "none";
+//     }
+// }
+
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+
+// // =----------------------------------------
